@@ -1,3 +1,27 @@
-.questionbox {
-text-align: center;
+:root {
+    --drkred: #8d0801;
+    --lghtred: #bf0603;
+    --yellow: #f4d58d;
+    --grey: #708d81;
+    --navy: #001427;
+    --aqua: #5dfdcb;
 }
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.questionbox {
+    text-align: center;
+    color: var(--aqua);
+    background-color: var(--drkred);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.button {
+    color: var(--aqua)!important;
+    background-color: var(--drkred)!important;
+    border-color: var(--yellow)!important;
+}
+
