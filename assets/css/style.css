@@ -1,26 +1,74 @@
 :root {
-    --drkred: #8d0801;
-    --lghtred: #bf0603;
-    --yellow: #f4d58d;
-    --grey: #708d81;
+    --drkred: #8D0801;
+    --lghtred: #BF0603;
+    --yellow: rgb(245, 236, 159);
+    --grey: #708D81;
     --navy: #001427;
-    --aqua: #5dfdcb;
+    --aqua: #5DFDCB;
 }
-
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
-
 .questionbox {
+    background-image: linear-gradient( var(--navy), var(--lghtred));
     text-align: center;
     color: var(--aqua);
     background-color: var(--drkred);
     padding: 15px;
     border-radius: 15px;
+    margin: 10px
 }
-
 .button {
-    color: var(--aqua)!important;
-    background-color: var(--drkred)!important;
+    color: var(--yellow)!important;
     border-color: var(--yellow)!important;
+}
+#questionOne {
+    color: var(--yellow);
+    font-size: 30px;
+    text-shadow: 1px 1px black;
+}
+#questionTwo {
+    color: var(--yellow);
+    font-size: 30px;
+    text-shadow: 1px 1px black;
+}
+#questionThree {
+    color: var(--yellow);
+    font-size: 30px;
+    text-shadow: 1px 1px black;
+}
+#questionFour {
+    color: var(--yellow);
+    font-size: 30px;
+    text-shadow: 1px 1px black;
+}
+#questionFive {
+    color: var(--yellow);
+    font-size: 30px;
+    text-shadow: 1px 1px black;
+}
+#questionSix {
+    color: var(--yellow);
+    font-size: 30px;
+    text-shadow: 1px 1px black;
+}
+#questionSeven {
+    color: var(--yellow);
+    font-size: 30px;
+    text-shadow: 1px 1px black;
+}
+#questionEight {
+    color: var(--yellow);
+    font-size: 30px;
+    text-shadow: 1px 1px black;
+}
+#questionNine {
+    color: var(--yellow);
+    font-size: 30px;
+    text-shadow: 1px 1px black;
+}
+#questionTen {
+    color: var(--yellow);
+    font-size: 30px;
+    text-shadow: 1px 1px black;
 }
