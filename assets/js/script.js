@@ -73,7 +73,7 @@ let requestedUrlEnd = '&plot=full&apikey=38928375&';
 
 let readyUrl = requestedUrlbase + moveTitle + requestedUrlEnd;
 
-let requestedUrl = 'http://www.omdbapi.com/?t=Major+League&plot=full&apikey=38928375&';
+// let requestedUrl = 'http://www.omdbapi.com/?t=Major+League&plot=full&apikey=38928375&';
 
 const pEl = document.getElementById('textEl');
 const plot = document.getElementById('plot');
@@ -122,6 +122,8 @@ fetch(triviaUrl)
     console.log(data);
     //below is all the replace methods needed on each question, hopfully the same symbols are used for the options
     // .replaceAll('%20', ' ').replaceAll('%3A%20', ' ').replaceAll('%3F', ' ').replaceAll('%27s%201989%20', ' ').replaceAll('%20%22', ' ').replaceAll('%22', ' ').replaceAll('%28', ' ').replaceAll('%29', ' ').replaceAll('%27', ' ').replaceAll('%60', ' ').replaceAll('%2C', '"').replaceAll('%21', '"').replaceAll('%26', '&').replaceAll('%3A', ' ').replaceAll('%2', ' ').replaceAll('%C3%B1%C3%', ' ')
+    
+    //question two
     let readyQuestionTwo = data.results[0].question.replaceAll('%20', ' ').replaceAll('%3A%20', ' ').replaceAll('%3F', ' ').replaceAll('%27s%201989%20', ' ').replaceAll('%20%22', ' ').replaceAll('%22', ' ').replaceAll('%28', ' ').replaceAll('%29', ' ').replaceAll('%27', ' ').replaceAll('%60', ' ').replaceAll('%2C', '"').replaceAll('%21', '"').replaceAll('%26', '&').replaceAll('%3A', ' ').replaceAll('%2', ' ').replaceAll('%C3%B1%C3%', ' ');
     let readyQuestionTwoOptionA = data.results[0].incorrect_answers[0].replaceAll('%20', ' ').replaceAll('%3A%20', ' ').replaceAll('%3F', ' ').replaceAll('%27s%201989%20', ' ').replaceAll('%20%22', ' ').replaceAll('%22', ' ').replaceAll('%28', ' ').replaceAll('%29', ' ').replaceAll('%27', ' ').replaceAll('%60', ' ').replaceAll('%2C', '"').replaceAll('%21', '"').replaceAll('%26', '&').replaceAll('%3A', ' ').replaceAll('%2', ' ').replaceAll('%C3%B1%C3%', ' ');
     let readyQuestionTwoOptionB = data.results[0].incorrect_answers[1].replaceAll('%20', ' ').replaceAll('%3A%20', ' ').replaceAll('%3F', ' ').replaceAll('%27s%201989%20', ' ').replaceAll('%20%22', ' ').replaceAll('%22', ' ').replaceAll('%28', ' ').replaceAll('%29', ' ').replaceAll('%27', ' ').replaceAll('%60', ' ').replaceAll('%2C', '"').replaceAll('%21', '"').replaceAll('%26', '&').replaceAll('%3A', ' ').replaceAll('%2', ' ').replaceAll('%C3%B1%C3%', ' ');
@@ -134,7 +136,7 @@ fetch(triviaUrl)
     questionTwoOptionC.text(readyQuestionTwoOptionC);
     questionTwoOptionD.text(readyQuestionTwoOptionD);
 
-
+    //question 4
     let readyQuestionFour = data.results[1].question.replaceAll('%20', ' ').replaceAll('%3A%20', ' ').replaceAll('%3F', ' ').replaceAll('%27s%201989%20', ' ').replaceAll('%20%22', ' ').replaceAll('%22', ' ').replaceAll('%28', ' ').replaceAll('%29', ' ').replaceAll('%27', ' ').replaceAll('%60', ' ').replaceAll('%2C', '"').replaceAll('%21', '"').replaceAll('%26', '&').replaceAll('%3A', ' ').replaceAll('%2', ' ').replaceAll('%C3%B1%C3%', ' ');
     let readyQuestionFourOptionA = data.results[1].incorrect_answers[0].replaceAll('%20', ' ').replaceAll('%3A%20', ' ').replaceAll('%3F', ' ').replaceAll('%27s%201989%20', ' ').replaceAll('%20%22', ' ').replaceAll('%22', ' ').replaceAll('%28', ' ').replaceAll('%29', ' ').replaceAll('%27', ' ').replaceAll('%60', ' ').replaceAll('%2C', '"').replaceAll('%21', '"').replaceAll('%26', '&').replaceAll('%3A', ' ').replaceAll('%2', ' ').replaceAll('%C3%B1%C3%', ' ');
     let readyQuestionFourOptionB = data.results[1].correct_answer.replaceAll('%20', ' ').replaceAll('%3A%20', ' ').replaceAll('%3F', ' ').replaceAll('%27s%201989%20', ' ').replaceAll('%20%22', ' ').replaceAll('%22', ' ').replaceAll('%28', ' ').replaceAll('%29', ' ').replaceAll('%27', ' ').replaceAll('%60', ' ').replaceAll('%2C', '"').replaceAll('%21', '"').replaceAll('%26', '&').replaceAll('%3A', ' ').replaceAll('%2', ' ').replaceAll('%C3%B1%C3%', ' ');
@@ -147,6 +149,7 @@ fetch(triviaUrl)
     questionFourOptionC.text(readyQuestionFourOptionC);
     questionFourOptionD.text(readyQuestionFourOptionD);
 
+    //question 6
     let readyQuestionSix = data.results[2].question.replaceAll('%20', ' ').replaceAll('%3A%20', ' ').replaceAll('%3F', ' ').replaceAll('%27s%201989%20', ' ').replaceAll('%20%22', ' ').replaceAll('%22', ' ').replaceAll('%28', ' ').replaceAll('%29', ' ').replaceAll('%27', ' ').replaceAll('%60', ' ').replaceAll('%2C', '"').replaceAll('%21', '"').replaceAll('%26', '&').replaceAll('%3A', ' ').replaceAll('%2', ' ').replaceAll('%C3%B1%C3%', ' ');
     let readyQuestionSixOptionA = data.results[2].incorrect_answers[0].replaceAll('%20', ' ').replaceAll('%3A%20', ' ').replaceAll('%3F', ' ').replaceAll('%27s%201989%20', ' ').replaceAll('%20%22', ' ').replaceAll('%22', ' ').replaceAll('%28', ' ').replaceAll('%29', ' ').replaceAll('%27', ' ').replaceAll('%60', ' ').replaceAll('%2C', '"').replaceAll('%21', '"').replaceAll('%26', '&').replaceAll('%3A', ' ').replaceAll('%2', ' ').replaceAll('%C3%B1%C3%', ' ');
     let readyQuestionSixOptionB = data.results[2].incorrect_answers[2].replaceAll('%20', ' ').replaceAll('%3A%20', ' ').replaceAll('%3F', ' ').replaceAll('%27s%201989%20', ' ').replaceAll('%20%22', ' ').replaceAll('%22', ' ').replaceAll('%28', ' ').replaceAll('%29', ' ').replaceAll('%27', ' ').replaceAll('%60', ' ').replaceAll('%2C', '"').replaceAll('%21', '"').replaceAll('%26', '&').replaceAll('%3A', ' ').replaceAll('%2', ' ').replaceAll('%C3%B1%C3%', ' ');
@@ -159,11 +162,60 @@ fetch(triviaUrl)
     questionSixOptionC.text(readyQuestionSixOptionC);
     questionSixOptionD.text(readyQuestionSixOptionD);
 
-    //do question 8 and 9
+    //question 8
+    let readyQuestionEight = data.results[3].question.replaceAll('%20', ' ').replaceAll('%3A%20', ' ').replaceAll('%3F', ' ').replaceAll('%27s%201989%20', ' ').replaceAll('%20%22', ' ').replaceAll('%22', ' ').replaceAll('%28', ' ').replaceAll('%29', ' ').replaceAll('%27', ' ').replaceAll('%60', ' ').replaceAll('%2C', '"').replaceAll('%21', '"').replaceAll('%26', '&').replaceAll('%3A', ' ').replaceAll('%2', ' ').replaceAll('%C3%B1%C3%', ' ');
+    let readyQuestionEightOptionA = data.results[3].correct_answer.replaceAll('%20', ' ').replaceAll('%3A%20', ' ').replaceAll('%3F', ' ').replaceAll('%27s%201989%20', ' ').replaceAll('%20%22', ' ').replaceAll('%22', ' ').replaceAll('%28', ' ').replaceAll('%29', ' ').replaceAll('%27', ' ').replaceAll('%60', ' ').replaceAll('%2C', '"').replaceAll('%21', '"').replaceAll('%26', '&').replaceAll('%3A', ' ').replaceAll('%2', ' ').replaceAll('%C3%B1%C3%', ' ');
+    let readyQuestionEightOptionB = data.results[3].incorrect_answers[0].replaceAll('%20', ' ').replaceAll('%3A%20', ' ').replaceAll('%3F', ' ').replaceAll('%27s%201989%20', ' ').replaceAll('%20%22', ' ').replaceAll('%22', ' ').replaceAll('%28', ' ').replaceAll('%29', ' ').replaceAll('%27', ' ').replaceAll('%60', ' ').replaceAll('%2C', '"').replaceAll('%21', '"').replaceAll('%26', '&').replaceAll('%3A', ' ').replaceAll('%2', ' ').replaceAll('%C3%B1%C3%', ' ');
+    let readyQuestionEightOptionC = data.results[3].incorrect_answers[1].replaceAll('%20', ' ').replaceAll('%3A%20', ' ').replaceAll('%3F', ' ').replaceAll('%27s%201989%20', ' ').replaceAll('%20%22', ' ').replaceAll('%22', ' ').replaceAll('%28', ' ').replaceAll('%29', ' ').replaceAll('%27', ' ').replaceAll('%60', ' ').replaceAll('%2C', '"').replaceAll('%21', '"').replaceAll('%26', '&').replaceAll('%3A', ' ').replaceAll('%2', ' ').replaceAll('%C3%B1%C3%', ' ');
+    let readyQuestionEightOptionD = data.results[3].incorrect_answers[2].replaceAll('%20', ' ').replaceAll('%3A%20', ' ').replaceAll('%3F', ' ').replaceAll('%27s%201989%20', ' ').replaceAll('%20%22', ' ').replaceAll('%22', ' ').replaceAll('%28', ' ').replaceAll('%29', ' ').replaceAll('%27', ' ').replaceAll('%60', ' ').replaceAll('%2C', '"').replaceAll('%21', '"').replaceAll('%26', '&').replaceAll('%3A', ' ').replaceAll('%2', ' ').replaceAll('%C3%B1%C3%', ' ');
+    
+    questionEight.text(readyQuestionEight);
+    questionEightOptionA.text(readyQuestionEightOptionA);
+    questionEightOptionB.text(readyQuestionEightOptionB);
+    questionEightOptionC.text(readyQuestionEightOptionC);
+    questionEightOptionD.text(readyQuestionEightOptionD);
+
+    //question 9
+    let readyQuestionNine = data.results[4].question.replaceAll('%20', ' ').replaceAll('%3A%20', ' ').replaceAll('%3F', ' ').replaceAll('%27s%201989%20', ' ').replaceAll('%20%22', ' ').replaceAll('%22', ' ').replaceAll('%28', ' ').replaceAll('%29', ' ').replaceAll('%27', ' ').replaceAll('%60', ' ').replaceAll('%2C', '"').replaceAll('%21', '"').replaceAll('%26', '&').replaceAll('%3A', ' ').replaceAll('%2', ' ').replaceAll('%C3%B1%C3%', ' ');
+    let readyQuestionNineOptionA = data.results[4].correct_answer.replaceAll('%20', ' ').replaceAll('%3A%20', ' ').replaceAll('%3F', ' ').replaceAll('%27s%201989%20', ' ').replaceAll('%20%22', ' ').replaceAll('%22', ' ').replaceAll('%28', ' ').replaceAll('%29', ' ').replaceAll('%27', ' ').replaceAll('%60', ' ').replaceAll('%2C', '"').replaceAll('%21', '"').replaceAll('%26', '&').replaceAll('%3A', ' ').replaceAll('%2', ' ').replaceAll('%C3%B1%C3%', ' ');
+    let readyQuestionNineOptionB = data.results[4].incorrect_answers[0].replaceAll('%20', ' ').replaceAll('%3A%20', ' ').replaceAll('%3F', ' ').replaceAll('%27s%201989%20', ' ').replaceAll('%20%22', ' ').replaceAll('%22', ' ').replaceAll('%28', ' ').replaceAll('%29', ' ').replaceAll('%27', ' ').replaceAll('%60', ' ').replaceAll('%2C', '"').replaceAll('%21', '"').replaceAll('%26', '&').replaceAll('%3A', ' ').replaceAll('%2', ' ').replaceAll('%C3%B1%C3%', ' ');
+    let readyQuestionNineOptionC = data.results[4].incorrect_answers[1].replaceAll('%20', ' ').replaceAll('%3A%20', ' ').replaceAll('%3F', ' ').replaceAll('%27s%201989%20', ' ').replaceAll('%20%22', ' ').replaceAll('%22', ' ').replaceAll('%28', ' ').replaceAll('%29', ' ').replaceAll('%27', ' ').replaceAll('%60', ' ').replaceAll('%2C', '"').replaceAll('%21', '"').replaceAll('%26', '&').replaceAll('%3A', ' ').replaceAll('%2', ' ').replaceAll('%C3%B1%C3%', ' ');
+    let readyQuestionNineOptionD = data.results[4].incorrect_answers[2].replaceAll('%20', ' ').replaceAll('%3A%20', ' ').replaceAll('%3F', ' ').replaceAll('%27s%201989%20', ' ').replaceAll('%20%22', ' ').replaceAll('%22', ' ').replaceAll('%28', ' ').replaceAll('%29', ' ').replaceAll('%27', ' ').replaceAll('%60', ' ').replaceAll('%2C', '"').replaceAll('%21', '"').replaceAll('%26', '&').replaceAll('%3A', ' ').replaceAll('%2', ' ').replaceAll('%C3%B1%C3%', ' ');
+    
+    questionNine.text(readyQuestionNine);
+    questionNineOptionA.text(readyQuestionNineOptionA);
+    questionNineOptionB.text(readyQuestionNineOptionB);
+    questionNineOptionC.text(readyQuestionNineOptionC);
+    questionNineOptionD.text(readyQuestionNineOptionD);
+
+ 
     //create fetch with true or false url and do remaining questions
     //brainstorm randomizing the order of your li's
     
 })
+
+let trueFalseUrlAPI = 'https://opentdb.com/api.php?amount=3&category=11&difficulty=easy&type=boolean&encode=url3986';
+
+fetch(trueFalseUrlAPI)
+.then((response) => {
+    return response.json();
+})
+.then((data) => {
+
+    //do questions 3, 7, 10
+    let readyQuestionThree = data.results[0].question.replaceAll('%20', ' ').replaceAll('%3A%20', ' ').replaceAll('%3F', ' ').replaceAll('%27s%201989%20', ' ').replaceAll('%20%22', ' ').replaceAll('%22', ' ').replaceAll('%28', ' ').replaceAll('%29', ' ').replaceAll('%27', ' ').replaceAll('%60', ' ').replaceAll('%2C', '"').replaceAll('%21', '"').replaceAll('%26', '&').replaceAll('%3A', ' ').replaceAll('%2', ' ').replaceAll('%C3%B1%C3%', ' ');
+    let readyQuestionSeven = data.results[1].question.replaceAll('%20', ' ').replaceAll('%3A%20', ' ').replaceAll('%3F', ' ').replaceAll('%27s%201989%20', ' ').replaceAll('%20%22', ' ').replaceAll('%22', ' ').replaceAll('%28', ' ').replaceAll('%29', ' ').replaceAll('%27', ' ').replaceAll('%60', ' ').replaceAll('%2C', '"').replaceAll('%21', '"').replaceAll('%26', '&').replaceAll('%3A', ' ').replaceAll('%2', ' ').replaceAll('%C3%B1%C3%', ' ');
+    let readyQuestionTen = data.results[2].question.replaceAll('%20', ' ').replaceAll('%3A%20', ' ').replaceAll('%3F', ' ').replaceAll('%27s%201989%20', ' ').replaceAll('%20%22', ' ').replaceAll('%22', ' ').replaceAll('%28', ' ').replaceAll('%29', ' ').replaceAll('%27', ' ').replaceAll('%60', ' ').replaceAll('%2C', '"').replaceAll('%21', '"').replaceAll('%26', '&').replaceAll('%3A', ' ').replaceAll('%2', ' ').replaceAll('%C3%B1%C3%', ' ');
+    
+    questionThree.text(readyQuestionThree);
+    questionSeven.text(readyQuestionSeven);
+    questionTen.text(readyQuestionTen);
+
+
+
+
+})
+
 
 
 
