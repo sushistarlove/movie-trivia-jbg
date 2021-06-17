@@ -256,6 +256,9 @@ fetch(trueFalseUrlAPI)
 
 })
 
+function KeepScore(Index) {
+    
+}
 
 
 
