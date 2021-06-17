@@ -89,3 +89,7 @@ border-right: none;
 color:var(--yellow);
 font-size: 22px;
 }
+
+.input::focus {
+    border: none !important;
+}
