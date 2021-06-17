@@ -128,11 +128,22 @@ fetch(triviaUrl)
     let readyQuestionTwoOptionC = data.results[0].correct_answer.replaceAll('%20', ' ').replaceAll('%3A%20', ' ').replaceAll('%3F', ' ').replaceAll('%27s%201989%20', ' ').replaceAll('%20%22', ' ').replaceAll('%22', ' ').replaceAll('%28', ' ').replaceAll('%29', ' ').replaceAll('%27', ' ').replaceAll('%60', ' ').replaceAll('%2C', '"').replaceAll('%21', '"').replaceAll('%26', '&').replaceAll('%3A', ' ').replaceAll('%2', ' ').replaceAll('%C3%B1%C3%', ' ');
     let readyQuestionTwoOptionD = data.results[0].incorrect_answers[2].replaceAll('%20', ' ').replaceAll('%3A%20', ' ').replaceAll('%3F', ' ').replaceAll('%27s%201989%20', ' ').replaceAll('%20%22', ' ').replaceAll('%22', ' ').replaceAll('%28', ' ').replaceAll('%29', ' ').replaceAll('%27', ' ').replaceAll('%60', ' ').replaceAll('%2C', '"').replaceAll('%21', '"').replaceAll('%26', '&').replaceAll('%3A', ' ').replaceAll('%2', ' ').replaceAll('%C3%B1%C3%', ' ');
     
+    let q2choices = [readyQuestionTwoOptionA, readyQuestionTwoOptionB, readyQuestionTwoOptionC, readyQuestionTwoOptionD];
+    console.log(q2choices);
+
+    // function shuffle(array) {
+    //     array.sort(() => Math.random() - 0.5);
+    //   }
+    q2choices = q2choices.sort(() => Math.random() - 0.5);
+    // shuffle(q2choices)
+
+    console.log(q2choices);
+
     questionTwo.text(readyQuestionTwo);
-    questionTwoOptionA.text(readyQuestionTwoOptionA);
-    questionTwoOptionB.text(readyQuestionTwoOptionB);
-    questionTwoOptionC.text(readyQuestionTwoOptionC);
-    questionTwoOptionD.text(readyQuestionTwoOptionD);
+    questionTwoOptionA.text(q2choices[0]);
+    questionTwoOptionB.text(q2choices[1]);
+    questionTwoOptionC.text(q2choices[2]);
+    questionTwoOptionD.text(q2choices[3]);
 
 
     let readyQuestionFour = data.results[1].question.replaceAll('%20', ' ').replaceAll('%3A%20', ' ').replaceAll('%3F', ' ').replaceAll('%27s%201989%20', ' ').replaceAll('%20%22', ' ').replaceAll('%22', ' ').replaceAll('%28', ' ').replaceAll('%29', ' ').replaceAll('%27', ' ').replaceAll('%60', ' ').replaceAll('%2C', '"').replaceAll('%21', '"').replaceAll('%26', '&').replaceAll('%3A', ' ').replaceAll('%2', ' ').replaceAll('%C3%B1%C3%', ' ');
