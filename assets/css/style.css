@@ -88,8 +88,19 @@ border-right: none;
 .input::placeholder {
 color:var(--yellow);
 font-size: 22px;
+text-shadow: 1px 1px var(--navy);
 }
 
 .input::focus {
     border: none !important;
+}
+
+#questionOneMovieDescription {
+    color: #fff;
+    text-shadow: 1px 1px black;
+}
+
+#questionFiveMovieDescription {
+    color: #fff;
+    text-shadow: 1px 1px black;
 }
