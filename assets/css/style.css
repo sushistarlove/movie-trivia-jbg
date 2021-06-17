@@ -14,17 +14,16 @@
     text-align: center;
     color: var(--aqua);
     background-color: var(--drkred);
-    padding: 15px;
+    padding: 40px;
     border-radius: 15px;
     margin: 10px
 }
 .button {
     color: var(--yellow)!important;
     border-color: var(--yellow)!important;
+    width: 100%;
 }
-<<<<<<< HEAD
 
-=======
 #questionOne {
     color: var(--yellow);
     font-size: 30px;
@@ -75,4 +74,18 @@
     font-size: 30px;
     text-shadow: 1px 1px black;
 }
->>>>>>> 6710d8ab0ca85f431558dc8039d6a9a480d8bbbb
+
+.input {
+margin: 10px;
+margin-left: 0%;
+background-color: transparent !important;
+border-bottom: 3px solid var(--yellow) !important;
+border-top: none;
+border-left: none;
+border-right: none;
+}
+
+.input::placeholder {
+color:var(--yellow);
+font-size: 22px;
+}
