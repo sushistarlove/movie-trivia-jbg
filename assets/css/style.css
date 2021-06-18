@@ -245,3 +245,25 @@ header a {
     font-size: 15px;
     text-shadow: 1px 1px var(--lghtred);
 }
+
+.HighScoresParent {
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    top: 53px;
+    text-align: center;
+}
+#highScoresTitle {
+    color: var(--yellow);
+    font-size: 22px;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+}
+
+#highScoresHousingEl li {
+    margin: 15px 0;
+    
+}
