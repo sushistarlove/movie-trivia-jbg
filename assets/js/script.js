@@ -92,6 +92,8 @@ const movieNames = ['Lone Survivor', 'The Hangover', 'cheaper by the dozen', 'Sh
 //generates a random number between zero and the length of our list of movies
 let randomIndex = Math.floor(Math.random() * (movieNames.length - 1) + 1);
 
+const highScoreUl = $("#highScoresHousingEl")
+
 //first half of the url to be fetched
 let requestedUrlbase = 'http://www.omdbapi.com/?t=';
 let moveTitle = movieNames[randomIndex]; //grab a random movie name using the index of whatever number was generated
@@ -412,7 +414,7 @@ let allScores = []
 
 var localStorageGet = JSON.parse(localStorage.getItem("highscore"))
 if (localStorageGet !== null) {
-    localStorageGet = allScores;
+    allScores = localStorageGet;
 };
 
 
@@ -420,25 +422,38 @@ highScoreSubmitBtn.on('click', function() {
     console.log(points);
     console.log(inputHighScoresPage.val());
     // let newItem = "name: " + nameInputEl.value;
-    var newScore = {
-        name: inputHighScoresPage.val(),
-        score: points
-    }
+    // var newScore = {
+    //     name: inputHighScoresPage.val(),
+    //     score: points
+    // }
+    var newScore = inputHighScoresPage.val() + ": " + points
     allScores.push(newScore);
     console.log(allScores);
 
     localStorage.setItem('highscore', JSON.stringify(allScores));
-    // input()
+    input()
 });
 
-// function input (){
-//     console.log(localStorage.getItem("highscore"));
-//     var tobesorted = JSON.parse(localStorage.getItem("highscore"));
 
 
+function input (){
+    // console.log(localStorage.getItem("highscore"));
+    var tobesorted = JSON.parse(localStorage.getItem("highscore"));
+    // tobesorted.sort(function (a,b){
+    //     return a.score + b.score;
+    // });
+    // console.log(tobesorted);
+
+    for (let i = 0; i < tobesorted.length; i++) {
+        let newItem = $("<li></li>");
+        newItem.addClass("highscoreItem");
+        newItem.text(tobesorted[i]);
+        highScoreUl.append(newItem);
+        
+    }
 
 
-//     document.querySelector("#playername").textContent = tobesorted[0].name;
-// }
+    // document.querySelector("#playername").textContent = tobesorted[0].name;
+}
 
-// input()
+input()
