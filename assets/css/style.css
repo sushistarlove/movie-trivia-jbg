@@ -106,10 +106,7 @@ body {
     text-shadow: 1px 1px black;
 }
 
-#questionFiveMovieDescription {
-    color: #fff;
-    text-shadow: 1px 1px black;
-}
+
 
 #test {
     width: 100%;
@@ -152,6 +149,7 @@ color: var(--lghtred);
     background-image: linear-gradient( var(--navy), var(--lghtred));
     text-align: center;
     padding-top: 18%;
+
 }
 
 #finalScore {
@@ -212,10 +210,17 @@ color: var(--lghtred);
     border-right: none;
     position: relative;
     left: 7px;
+    color: var(--yellow) !important;
 }
+
+#InputForSubmitHighScore:focus, input:focus{
+    outline: none;
+}
+
+
 #InputForSubmitHighScore::placeholder {
     font-size: 14px;
-    color: white;
+    color: var(--yellow);
 }
 #SubmitBtnForHighScore {
     background-color: transparent;
