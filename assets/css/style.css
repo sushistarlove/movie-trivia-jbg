@@ -123,19 +123,27 @@ body {
 #homepagetitle {
     color: var(--yellow);
     text-align: center;
-    font-size: 35px;
+    font-size: 28px;
     text-shadow: 2px 2px var(--lghtred);
     font-family: Arial, Helvetica, sans-serif;
 }
 
 #startbutton {
     text-align: center;
-    width: 100%;
-    height: 50vh;
+    position: relative;
+    top: 155px;
+    width: 30%;
+    display: block;
+    margin: 0 auto;
 }
 
+#startbutton button a {
+color: var(--lghtred);
+}
+
+
 .clicked {
-    background-color: var(--navy) !important;
+    background-color: var(--navy)!important;
 }
 
 #viewResults {
@@ -223,4 +231,17 @@ body {
 #SubmitBtnForHighScore:hover {
     background-color: var(--yellow);
     color: var(--navy);
+}
+
+header {
+    justify-content: space-between;
+    display: flex;
+    padding: 15px 20px;
+    align-items: center;
+}
+
+header a {
+    color: var(--yellow);
+    font-size: 15px;
+    text-shadow: 1px 1px var(--lghtred);
 }
