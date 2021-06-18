@@ -405,3 +405,40 @@ playAgainBtn.on('click', () => {
     points = 0;
     location.reload();
 })
+
+// High Score submission
+
+let allScores = []
+
+var localStorageGet = JSON.parse(localStorage.getItem("highscore"))
+if (localStorageGet !== null) {
+    localStorageGet = allScores;
+};
+
+
+highScoreSubmitBtn.on('click', function() {
+    console.log(points);
+    console.log(inputHighScoresPage.val());
+    // let newItem = "name: " + nameInputEl.value;
+    var newScore = {
+        name: inputHighScoresPage.val(),
+        score: points
+    }
+    allScores.push(newScore);
+    console.log(allScores);
+
+    localStorage.setItem('highscore', JSON.stringify(allScores));
+    // input()
+});
+
+// function input (){
+//     console.log(localStorage.getItem("highscore"));
+//     var tobesorted = JSON.parse(localStorage.getItem("highscore"));
+
+
+
+
+//     document.querySelector("#playername").textContent = tobesorted[0].name;
+// }
+
+// input()
