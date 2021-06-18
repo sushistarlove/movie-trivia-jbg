@@ -6,6 +6,9 @@
     --navy: #001427;
     --aqua: #5DFDCB;
 }
+body {
+    background-color: var(--navy);
+}
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -17,6 +20,9 @@
     padding: 40px;
     border-radius: 15px;
     margin: 10px
+}
+#questionSetOne {
+    margin-top: 0;
 }
 .button {
     color: var(--yellow)!important;
@@ -76,19 +82,19 @@
 }
 
 .input {
-margin: 10px;
-margin-left: 0%;
-background-color: transparent !important;
-border-bottom: 3px solid var(--yellow) !important;
-border-top: none;
-border-left: none;
-border-right: none;
+    margin: 10px;
+    margin-left: 0%;
+    background-color: transparent !important;
+    border-bottom: 3px solid var(--yellow) !important;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
 
 .input::placeholder {
-color:var(--yellow);
-font-size: 22px;
-text-shadow: 1px 1px var(--navy);
+    color:var(--yellow);
+    font-size: 22px;
+    text-shadow: 1px 1px var(--navy);
 }
 
 .input::focus {
@@ -126,4 +132,95 @@ text-shadow: 1px 1px var(--navy);
     text-align: center;
     width: 100%;
     height: 50vh;
+}
+
+.clicked {
+    background-color: var(--navy) !important;
+}
+
+#viewResults {
+    display: none;
+    height: 100vh;
+    background-image: linear-gradient( var(--navy), var(--lghtred));
+    text-align: center;
+    padding-top: 18%;
+}
+
+#finalScore {
+    color: var(--yellow);
+}
+
+.add-flex {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+.submitBtnEl {
+    display: flex;
+    justify-content: center;
+    
+}
+#submitBtn {
+    padding: 8px 20px;
+    width: 90%;
+    border-radius: 5px !important;
+    border-color: var(--yellow);
+    background-color: transparent;
+    color: var(--yellow);
+    font-size: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    
+}
+#playAgain {
+    position: relative;
+    right: 77px;
+    border: solid 3px var(--yellow);
+    color: var(--yellow);
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#playAgain:hover {
+    background-color: var(--yellow);
+    color: var(--navy);
+}
+
+.guessMovieBtn {
+    padding: 7px 20px;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 5px;
+    border-color: var(--yellow);
+    cursor: pointer;
+    color: white;
+}
+#InputForSubmitHighScore {
+    background-color: transparent !important;
+    border-bottom: 3px solid var(--yellow) !important;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    position: relative;
+    left: 7px;
+}
+#InputForSubmitHighScore::placeholder {
+    font-size: 14px;
+    color: white;
+}
+#SubmitBtnForHighScore {
+    background-color: transparent;
+    border-color: var(--yellow);
+    border-bottom: solid 3px var(--yellow);
+    border-top: solid 3px var(--yellow);
+    border-left: solid 3px var(--yellow);
+    border-right: solid 3px var(--yellow);
+    color: var(--yellow);
+    border-radius: 5px;
+    cursor: pointer;
+}
+#SubmitBtnForHighScore:hover {
+    background-color: var(--yellow);
+    color: var(--navy);
 }
