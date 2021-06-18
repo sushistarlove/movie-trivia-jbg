@@ -270,7 +270,8 @@ header a {
 }
 #highScoresTitle {
     color: var(--yellow);
-    font-size: 22px;
+    font-size: 30px;
+    text-shadow:  2px 2px var(--navy);
     text-decoration: underline;
     text-underline-offset: 7px;
 }
@@ -278,4 +279,18 @@ header a {
 #highScoresHousingEl li {
     margin: 15px 0;
     
+}
+
+.HighScoresParent {
+    background-image: linear-gradient(var(--lghtred), var(--navy));
+}
+
+#homepagetitle {
+    text-shadow: 2px 2px var(--navy);
+    font-size: 35px;
+}
+
+#homepagetext {
+    font-size: 25px;
+    text-shadow: 2px 2px var(--navy);
 }
