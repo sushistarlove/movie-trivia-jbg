@@ -95,7 +95,7 @@ let randomIndex = Math.floor(Math.random() * (movieNames.length - 1) + 1);
 const highScoreUl = $("#highScoresHousingEl")
 
 //first half of the url to be fetched
-let requestedUrlbase = 'http://www.omdbapi.com/?t=';
+let requestedUrlbase = 'https://www.omdbapi.com/?t=';
 let moveTitle = movieNames[randomIndex]; //grab a random movie name using the index of whatever number was generated
 let requestedUrlEnd = '&plot=full&apikey=38928375&';
 
