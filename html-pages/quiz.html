@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Movie Quiz</title>
+</head>
+<body>
+    <div class="viewResults" id="viewResults">
+        <p id="finalScore">Final Score</p>
+        <div class="add-flex">
+            <input type="text" id="InputForSubmitHighScore" placeholder="intials">
+            <button id="SubmitBtnForHighScore">Submit Score</button>
+        </div>
+        <button id="playAgain">Play Again</button>
+        
+    </div>
+    <div class="parent-El" id="parent-El">
+        <div class="questionbox" id="questionSetOne">
+            <h1 class="question" id="questionOne">Read the description below and enter the name of the movie.</h1>
+            <p id="questionOneMovieDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus natus maiores dicta quidem iste vero iure, numquam repellat? Commodi a quibusdam corporis veniam. Voluptatum nobis quo veritatis voluptate est soluta.</p>
+            <div class="moviePosterContainer">
+                <img src="#" alt="movieposter" style="display: none;" class="moviePoster" id="questionOneMoviePoster">
+            </div>
+            <div class="input-parent">
+                <input type="text" class="input" id="questionOne-input" placeholder="Write Your Answer Here">
+                <button id="SubmitBtnforQuestionOne" class="guessMovieBtn">Submit</button>
+            </div>
+        </div>
+        <div class="questionbox" id="questionSetTwo">
+            <h1 class="question" id="questionTwo">:film_frames: Lorem Ipsum Dolor? :popcorn:</h1>
+            <br>
+            <button class="button is-ghost  m-2 px-6 is-rounded" id="QuestionTwoOptionA">Answer 1</button>
+            <br>
+            <button class="button is-ghost  m-2 px-6 is-rounded" id="QuestionTwoOptionB">Answer 2</button>
+            <br>
+            <button class="button is-ghost  m-2 px-6 is-rounded" id="QuestionTwoOptionC">Answer 3</button>
+            <br>
+            <button class="button is-ghost  m-2 px-6 is-rounded" id="QuestionTwoOptionD">Answer 4</button>
+        </div>
+        <div class="questionbox" id="questionSetThree">
+            <h1 class="question" id="questionThree">:film_frames: Lorem Ipsum Dolor? :popcorn:</h1>
+            <br>
+            <button class="button is-ghost  m-2 px-6 is-rounded" id="QuestionThreeOptionA">True</button>
+            <br>
+            <button class="button is-ghost  m-2 px-6 is-rounded" id="QuestionThreeOptionB">False</button>
+            
+        </div>
+        <div class="questionbox" id="questionSetFour">
+            <h1 class="question" id="questionFour">:film_frames: Lorem Ipsum Dolor? :popcorn:</h1>
+            <br>
+            <button class="button is-ghost  m-2 px-6 is-rounded" id="QuestionFourOptionA">Answer 1</button>
+            <br>
+            <button class="button is-ghost  m-2 px-6 is-rounded" id="QuestionFourOptionB">Answer 2</button>
+            <br>
+            <button class="button is-ghost  m-2 px-6 is-rounded" id="QuestionFourOptionC">Answer 3</button>
+            <br>
+            <button class="button is-ghost  m-2 px-6 is-rounded" id="QuestionFourOptionD">Answer 4</button>
+        </div>
+        <div class="questionbox" id="questionSetFive">
+            <h1 class="question" id="questionFive">Read the description below and enter the name of the movie.</h1>
+            <p id="questionFiveMovieDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus natus maiores dicta quidem iste vero iure, numquam repellat? Commodi a quibusdam corporis veniam. Voluptatum nobis quo veritatis voluptate est soluta.</p>
+            <div class="moviePosterContainer">
+                <img src="#" alt="movieposter" style="display: none;" class="moviePoster" id="questionFiveMoviePoster">
+            </div>
+            <div class="input-parent">
+                <input type="text" class="input" id="questionFive-input" placeholder="Write Your Answer Here">
+                <button id="SubmitBtnforQuestionFive" class="guessMovieBtn">Submit</button>
+                
+            </div>
+            
+        </div>
+        <div class="questionbox" id="questionSetSix">
+            <h1 class="question" id="questionSix">:film_frames: Lorem Ipsum Dolor? :popcorn:</h1>
+            <br>
+            <button class="button is-ghost  m-2 px-6 is-rounded" id="QuestionSixOptionA">Answer 1</button>
+            <br>
+            <button class="button is-ghost  m-2 px-6 is-rounded" id="QuestionSixOptionB">Answer 2</button>
+            <br>
+            <button class="button is-ghost  m-2 px-6 is-rounded" id="QuestionSixOptionC">Answer 3</button>
+            <br>
+            <button class="button is-ghost  m-2 px-6 is-rounded" id="QuestionSixOptionD">Answer 4</button>
+        </div>
+        <div class="questionbox" id="questionSetSeven">
+            <h1 class="question" id="questionSeven">:film_frames: Lorem Ipsum Dolor? :popcorn:</h1>
+            <br>
+            <button class="button is-ghost  m-2 px-6 is-rounded" id="QuestionSevenOptionA">True</button>
+            <br>
+            <button class="button is-ghost  m-2 px-6 is-rounded" id="QuestionSevenOptionB">False</button>
+            
+        </div>
+        <div class="questionbox" id="questionSetEight">
+            <h1 class="question" id="questionEight">:film_frames: Lorem Ipsum Dolor? :popcorn:</h1>
+            <br>
+            <button class="button is-ghost  m-2 px-6 is-rounded" id="QuestionEightOptionA">Answer 1</button>
+            <br>
+            <button class="button is-ghost  m-2 px-6 is-rounded" id="QuestionEightOptionB">Answer 2</button>
+            <br>
+            <button class="button is-ghost  m-2 px-6 is-rounded" id="QuestionEightOptionC">Answer 3</button>
+            <br>
+            <button class="button is-ghost  m-2 px-6 is-rounded" id="QuestionEightOptionD">Answer 4</button>
+        </div>
+        <div class="questionbox" id="questionSetNine">
+            <h1 class="question" id="questionNine">:film_frames: Lorem Ipsum Dolor? :popcorn:</h1>
+            <br>
+            <button class="button is-ghost  m-2 px-6 is-rounded" id="QuestionNineOptionA">Answer 1</button>
+            <br>
+            <button class="button is-ghost  m-2 px-6 is-rounded" id="QuestionNineOptionB">Answer 2</button>
+            <br>
+            <button class="button is-ghost  m-2 px-6 is-rounded" id="QuestionNineOptionC">Answer 3</button>
+            <br>
+            <button class="button is-ghost  m-2 px-6 is-rounded" id="QuestionNineOptionD">Answer 4</button>
+        </div>
+        <div class="questionbox" id="questionSetTen">
+            <h1 class="question" id="questionTen">:film_frames: Lorem Ipsum Dolor? :popcorn:</h1>
+            <br>
+            <button class="button is-ghost  m-2 px-6 is-rounded" id="QuestionTenOptionA">True</button>
+            <br>
+            <button class="button is-ghost  m-2 px-6 is-rounded" id="QuestionTenOptionB">False</button>
+            
+        </div>
+        <div class="submitBtnEl">
+            <button id="submitBtn">Submit Your Answers</button>
+
+        </div>
+       
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../assets/js/script.js"></script>
+    
+</body>
+</html>
