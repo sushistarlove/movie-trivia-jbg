@@ -222,6 +222,7 @@ color: var(--lghtred);
 
 #InputForSubmitHighScore:focus, input:focus{
     outline: none;
+    color: var(--yellow);
 }
 
 
@@ -239,6 +240,16 @@ color: var(--lghtred);
     color: var(--yellow);
     border-radius: 5px;
     cursor: pointer;
+}
+
+#highScorePageBtnFr {
+    background-color: transparent;
+    border: solid 3px var(--yellow);
+
+
+}
+#highScorePageBtnFr a {
+    color: var(--yellow);
 }
 #SubmitBtnForHighScore:hover {
     background-color: var(--yellow);
@@ -278,6 +289,7 @@ header a {
 
 #highScoresHousingEl li {
     margin: 15px 0;
+    color: var(--yellow);
     
 }
 
