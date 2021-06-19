@@ -127,8 +127,8 @@ body {
 #homepagetitle {
     color: var(--yellow);
     text-align: center;
-    font-size: 28px;
-    text-shadow: 2px 2px var(--lghtred);
+    font-size: 22px !important;
+    text-shadow: 2px 2px var(--lghtred) !important;
     font-family: Arial, Helvetica, sans-serif;
 }
 
