@@ -432,6 +432,7 @@ highScoreSubmitBtn.on('click', function() {
 
     localStorage.setItem('highscore', JSON.stringify(allScores));
     input()
+    inputHighScoresPage.val('');
 });
 
 
